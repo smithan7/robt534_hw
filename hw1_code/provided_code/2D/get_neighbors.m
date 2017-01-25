@@ -12,7 +12,7 @@ function [nbrs, num_nbrs] = get_neighbors(map, stateID)
 
 [x,y] = state_from_index(map,stateID);
 
-acts = [0 -1; 1 0; 0 1; -1 0; 0 0];
+acts = [0 -1; 1 0; 0 1; -1 0];% 1, 1; 1,-1; -1,-1; -1,1];
 nbrs = [];
 num_nbrs = 0;
 
